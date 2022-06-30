@@ -1,25 +1,23 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  background: #121212;
 }
 
 .sidebar {
   margin: 0;
-  padding: 16px;
+  padding: 0;
   width: 200px;
   background-color: #242424 !important;
   position: fixed;
   height: 100%;
   overflow: auto;
-  text-align:center;	
 }
 
 .sidebar a {
-margin: 0;
   display: block;
   color: #fff;
-padding:10px;
- 
+  padding: 16px;
   text-decoration: none;
 }
  
@@ -32,12 +30,40 @@ padding:10px;
     width: 130px;
 }
 
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+  padding: 1.2rem 0rem !important;
+}
+
+.community-banner{
+    background: url('img/community-bg.png');
+    background-size: cover;
+    height: 215px;
+    color: #fff;
+    text-align: center;
+    padding: 45px;
+}
+
+.comm-head{
+    font-size: 2.5rem;
+    margin-top: .5rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 60px;
+}
+
+
+.comm-para{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
     position: relative;
-	padding: 0px;
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
@@ -49,10 +75,7 @@ padding:10px;
     float: none;
   }
 }
-.center{
-	margin:0;
-	padding:225px 0px;
-}
+
 
 
 
