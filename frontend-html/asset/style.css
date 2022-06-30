@@ -4,21 +4,28 @@ body {
   background: #121212;
 }
 
+a, a:hover{
+    text-decoration: none;
+    color: #fff;
+}
 .sidebar {
   margin: 0;
-  padding: 0;
+  padding: 16px;
   width: 200px;
+  text-align:center;	
   background-color: #242424 !important;
   position: fixed;
   height: 100%;
-  overflow: auto;
+  overflow: clip;
 }
 
 .sidebar a {
+  margin: 0;
   display: block;
   color: #fff;
   padding: 16px;
   text-decoration: none;
+  padding:10px;
 }
  
 .sidebar a:hover {
@@ -49,7 +56,7 @@ div.content {
 .comm-head{
     font-size: 2.5rem;
     margin-top: .5rem !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.2rem !important
     line-height: 60px;
 }
 
@@ -59,14 +66,102 @@ div.content {
     font-weight: 300;
 }
 
+.center{
+	margin:0;
+	padding:225px 0px;
+}
+
+.cndlists{
+    padding: 12px;
+    background-color: #242424 !important;
+    margin: 15px;
+    overflow: auto;
+    height: 280px;
+    border-radius: 7px;
+}
+
+.rep-list{
+    background-color: #363636 !important;
+    padding: 14px 18px;
+    border-radius: 7px;
+    color: #fff;
+    margin: 12px 0px;
+}
+
+.i-right{
+    float: right;
+}
+
+
+.optList{
+    display: flex;
+    padding: 0px 12px;
+}
+
+
+.view-option{
+    display: block ruby;
+    margin: 0px 10px;
+    position: absolute;
+    right: 0px;
+    background-color: #343a40;    
+    border-radius: 12px 12px 0px 0px;
+}
+
+.view-btn:hover{
+    background-color: #222528;
+}
+.view-btn{
+    color: #ced4da;
+    background-color: #343a40;
+    border-color: #343a40; 
+    padding: 3px 10px; 
+    border: 0px;
+}
+.view-icn i{
+   margin: 7px 12px;
+}
+
+.btn1 {
+    border-radius: 12px 0px 0px 0px;
+}
+
+.btn2 {
+    border-radius: 0px 12px 0px 0px;
+}
+
+.search-fil{
+    width: 424px;
+    height: 37px;
+    border-radius: 5px 8px 0px 0px;
+    padding: 12px;
+    background-color: #242424;
+    border: 1px solid #d8d8d870;
+    border-bottom: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-left: 42px;
+    color: #fff;
+}
+
+
+.src-icn{
+    position: relative;
+    top: 1px;
+    left: 38px;
+    z-index: 1000;
+    color: #fff;
+}
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
     position: relative;
+	padding: 0px;
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
+  
+.search-fil{ width: 225px;}
 }
 
 @media screen and (max-width: 400px) {
