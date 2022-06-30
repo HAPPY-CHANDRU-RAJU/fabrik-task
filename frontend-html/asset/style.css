@@ -10,8 +10,8 @@ a, a:hover{
 }
 .sidebar {
   margin: 0;
-  padding: 16px;
-  width: 200px;
+  padding: 29px 30px;
+  width: 228px;
   text-align:center;	
   background-color: #242424 !important;
   position: fixed;
@@ -34,14 +34,13 @@ a, a:hover{
 }
 
 .logo{
-    width: 130px;
+    height: 1.5rem;
 }
 
 div.content {
-  margin-left: 200px;
+  margin-left: 225px;
   padding: 1px 16px;
   height: 100%;
-  padding: 1.2rem 0rem !important;
 }
 
 .community-banner{
@@ -50,14 +49,15 @@ div.content {
     height: 215px;
     color: #fff;
     text-align: center;
-    padding: 45px;
+    padding: 45px 52px;
+    margin-top: -4px;
 }
 
 .comm-head{
     font-size: 2.5rem;
     margin-top: .5rem !important;
     margin-bottom: 0.2rem !important
-    line-height: 60px;
+    line-height: 60px;line-height: 1.5;
 }
 
 
@@ -76,8 +76,9 @@ div.content {
     background-color: #242424 !important;
     margin: 15px;
     overflow: auto;
-    height: 280px;
+    height: 245px;
     border-radius: 7px;
+    margin-right: 0px;
 }
 
 .rep-list{
@@ -85,7 +86,7 @@ div.content {
     padding: 14px 18px;
     border-radius: 7px;
     color: #fff;
-    margin: 12px 0px;
+    margin-bottom: 10px;
 }
 
 .i-right{
@@ -96,6 +97,7 @@ div.content {
 .optList{
     display: flex;
     padding: 0px 12px;
+    margin-top: 35px;
 }
 
 
@@ -129,7 +131,9 @@ div.content {
 .btn2 {
     border-radius: 0px 12px 0px 0px;
 }
-
+.active-btn{
+    color: #000;
+}
 .search-fil{
     width: 424px;
     height: 37px;
@@ -142,6 +146,8 @@ div.content {
     padding-left: 42px;
     color: #fff;
 }
+
+.search-field{ margin-left: -19px;}
 
 
 .src-icn{
@@ -161,7 +167,7 @@ div.content {
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
   
-.search-fil{ width: 225px;}
+.search-fil{ width: 140px;}
 }
 
 @media screen and (max-width: 400px) {
@@ -169,6 +175,8 @@ div.content {
     text-align: center;
     float: none;
   }
+  
+.search-fil{ width: 225px;}
 }
 
 
